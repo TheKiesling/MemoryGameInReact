@@ -1,0 +1,50 @@
+.game,
+.win{
+    width: 100%;
+    height: 100%;
+    background-color: #F5F5F5;
+    color: #FFCC00;
+    font-size: 20px;
+    font-family: 'Pokemon Solid', sans-serif;
+    text-align: center;
+}
+
+.game{
+    display: grid;
+    grid-template-columns: 70% 10% 10% 10%;
+    grid-template-rows: 20% 60% 20%;
+}
+
+.win{
+    display: flex;
+    flex-direction: column;
+}
+
+.game::after{
+    width: 100%;
+    height: 100%;
+    content: "Memory Game";
+    font-size: 100px;
+    -webkit-text-stroke: 6px #0075BE;
+    grid-area: 2 / 2 / 3 / 5;
+}
+
+p {
+    -webkit-text-stroke: 1px #0075BE;
+}
+
+.game p{
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+.win ul{
+    display: none;
+}
+
+.win::after{
+    width: 100%;
+    height: 100%;
+    content: "You Win";
+    font-size: 100px; 
+    -webkit-text-stroke: 6px #0075BE;
+}
