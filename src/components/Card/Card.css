@@ -35,6 +35,7 @@
     height: 50%;
     background-position: center;
     background-image: url("../../../Poke_Ball.webp");
+    background-repeat: no-repeat;
     background-size: contain;
 }
 

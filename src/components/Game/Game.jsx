@@ -13,7 +13,7 @@ const Game = () => {
 
   const move = () => {
     setMoves(
-      (oldMoves) =>  oldMoves + 0.5
+      (oldMoves) =>  oldMoves + 1
     )
   }
 
